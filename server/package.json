@@ -1,7 +1,7 @@
 {
-    "name": "service-manager",
+    "name": "service-manager-server",
     "version": "1.0.0",
-    "description": "A Vue.js project",
+    "description": "",
     "dependencies": {
         "@types/express": "^4.17.1",
         "@types/mssql": "^4.3.1",
