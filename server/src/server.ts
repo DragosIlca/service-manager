@@ -1,5 +1,6 @@
 import * as express from "express"
 import { ServiceRouter } from "./routes/service-router"
+import { DBConnector } from "./DBConnector"
 
 export class Server {
     public app: express.Application
@@ -10,7 +11,9 @@ export class Server {
 
     public start (): void {
         let router = new ServiceRouter()
-
-        router.create(this.app)
+        let dbConnection = DBConnector.getConnection()
+        dbConnection
+            .then((pool) => router.create(this.app, pool))
+            .catch((e) => console.log(e));
     }
 }
