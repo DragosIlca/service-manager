@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Brand</title>
+  <title>Appointment Specs</title>
 
   <!-- Page level plugin CSS-->
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
@@ -62,11 +62,20 @@
           <input type="radio" name="brandRadio" value="Dacia"> Dacia<br>
           <input type="radio" name="brandRadio" value=""> Other: <input class="input-text" type="text" id="brandInput"><br>
         </form>
+        <hr>
+        <p><b>Select Preffered Service</b></p>
+        <select class="form-control" id="servicesForm">
+        </select>
+        <hr>
+        <p><b>Select Required Operations</b></p>
+        <select class="form-control" id="operationsSelection" multiple>
+        </select>  
+        </ul>
       </div>
       <!-- /.container-fluid -->
 
       <a class="ico ico-next" href="appointment2.html">
-        <div style="color: black; font-size:125%; position: fixed; right: 85px; bottom: 50px; font-weight: bold;">Next</div>
+        <div style="color: black; font-size:125%; position: fixed; right: 85px; bottom: 50px; font-weight: bold;">Create appointment</div>
       </a>
       
     </div>
@@ -88,8 +97,8 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/client.js"></script>
-
   <script src="js/appointment/appointment.js"></script>
+
 </body>
 
 </html>
